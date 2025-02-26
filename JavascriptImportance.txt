@@ -1,0 +1,30 @@
+JS==>
+
+Frontend
+Html + CSS + JS + REACTJS
+Backend
+Nodejs + Expressjs + MongoDB
+
+JAVA
+
+Development Facilities:
+	Mobile app
+	Web app development
+	website development
+	BlockChain development(Contracts writing)
+
+Tech Facilities:
+	MongoDB ==> JS	No-sql
+	Expressjs==> JS	
+	Reactjs ==> JS
+	Angularjs ==> JS
+	Nodejs ==> JS
+	
+	Multi Stack:
+		MERN Stack/Full Stack
+		MEAN Stack/Full Stack
+
+	React Native ==> JS
+
+
+DOM
