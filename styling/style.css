@@ -1,0 +1,32 @@
+.displayProp {
+    height: 300px !important;
+    display: flex;
+    align-items: center;
+}
+
+.justifyProp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+
+
+
+
+
+body {
+    /* background-color: brown; */
+}
+
+.css_class {
+    font-size: 40px;
+    color: blueviolet;
+}
+
+#css_id {
+    font-weight: bold;
+    text-decoration: underline;
+    /* color: green; */
+}
