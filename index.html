@@ -70,7 +70,12 @@ HSL
 2. External JAVASCRIPT 
 -->
 
-
+<script>
+    function onPressEnter() {
+        console.log("You pressed Enter!");
+        document.getElementById("demo").innerHTML = "You pressed Enter!";
+    }
+</script>
 
 <style>
     #main {
@@ -91,7 +96,7 @@ HSL
 
 <body>
 
-    <p id="demo"></p>
+    <p id="demo">Press</p>
 
     <div id="main">
         <div style="background-color:coral;">Lorem</div>
@@ -101,6 +106,13 @@ HSL
         <div style="background-color:lightgrey;">E</div>
         <div style="background-color:lightgreen;">F</div>
     </div>
+
+
+    <button onclick="onPressEnter()">Press</button>
+    <button onclick="onPressEnter()">Press</button>
+    <button onclick="onPressEnter()">Press</button>
+    <button onclick="onPressEnter()">Press</button>
+
 
 
     <!-- <div class="displayProp">
