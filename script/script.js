@@ -111,12 +111,9 @@
 // The function which takes some parameters is called parametric function
 // The function which do not take any parameters is call non-parametric function
 
-function sumFunction(a = "", b = 50) {
-    // let a = 5
-    // let b = 10
-    console.log("Hello", a)
-    // let sum = a + b;
-    // return sum;
+function sumFunction(a, b) {
+    let sum = a + b;
+    return sum;
 }
 
 const sum = () => {
@@ -128,4 +125,71 @@ const sum = () => {
 let a = "Usama irfan"
 let b = 20
 
-console.log("SUM ARROW FUNCTION", sumFunction(a))
+// console.log("SUM ARROW FUNCTION")
+
+
+function toCelsius(fahrenheit) {
+    console.log(fahrenheit, "FAHRENHEIT VALUE")
+    if (fahrenheit) {
+        return (5 / 9) * (fahrenheit - 32);
+    } else {
+        alert("You must enter a fahrenheit value !!!")
+    }
+}
+
+// let value = toCelsius(77);
+// console.log(value, "CELSIUS VALUE")
+
+function GradeOfStudent(marks) {
+    // AND && If one of them is false than it means it is false
+    // OR || If one of them is true than it means it is true
+    // NOT ! If condition is true then it means it is false
+    // 91
+    let grade = '';
+
+    if (marks <= 100) {
+        if (marks > 90) {
+            // code block 1
+            console.log("YOUR ARE GREAT!")
+            grade = 'A+';
+        } else if (marks >= 80 && marks <= 90) {
+            // code block 2
+            console.log("YOUR ARE VERY GOOD!")
+            grade = 'A';
+        } else if (marks >= 70 && marks <= 80) {
+            // code block 3
+            console.log("YOUR ARE GOOD!")
+            grade = 'B';
+        } else if (marks >= 60 && marks <= 70) {
+            console.log("YOUR ARE AVERAGE!")
+            grade = 'C';
+        } else if (marks >= 50 && marks <= 60) {
+            console.log("YOUR ARE BELOW AVERAGE!")
+            grade = 'D';
+        } else {
+            console.log("YOUR ARE FAILED !")
+            grade = 'F';
+        }
+    } else {
+        console.log("Please enter marks between 0 to 100")
+        return "INVALID MARKS"
+    }
+    // return grade
+    // if (condition) {
+    //     // code block 1 
+    // } else {
+    //     // code block 2
+    // }
+    return grade;
+}
+
+console.log("GRADE = ", GradeOfStudent(70))
+
+// marks > 80 :
+// Grade A
+// marks > 70 && marks < 80:
+// Grade B
+// marks > 60 && marks < 70:
+// Grade C
+// marks > 50 && marks < 60:
+// Grade D
