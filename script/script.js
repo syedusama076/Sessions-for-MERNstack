@@ -106,6 +106,16 @@
 
 // var sum = 0;
 
+
+
+
+
+
+// ==== FUNCTIONS AND IF ELSE IF CONDTIONAL STATEMENTS ==== 
+
+
+
+
 // // Function
 
 // The function which takes some parameters is called parametric function
@@ -137,6 +147,8 @@ function toCelsius(fahrenheit) {
     }
 }
 
+
+
 // let value = toCelsius(77);
 // console.log(value, "CELSIUS VALUE")
 
@@ -145,9 +157,10 @@ function GradeOfStudent(marks) {
     // OR || If one of them is true than it means it is true
     // NOT ! If condition is true then it means it is false
     // 91
+    // Nested If conditions
     let grade = '';
-
     if (marks <= 100) {
+        // code block 1
         if (marks > 90) {
             // code block 1
             console.log("YOUR ARE GREAT!")
@@ -171,6 +184,7 @@ function GradeOfStudent(marks) {
             grade = 'F';
         }
     } else {
+        // code block 2
         console.log("Please enter marks between 0 to 100")
         return "INVALID MARKS"
     }
@@ -183,7 +197,7 @@ function GradeOfStudent(marks) {
     return grade;
 }
 
-console.log("GRADE = ", GradeOfStudent(70))
+console.log("GRADE = ", GradeOfStudent(100))
 
 // marks > 80 :
 // Grade A
@@ -193,3 +207,44 @@ console.log("GRADE = ", GradeOfStudent(70))
 // Grade C
 // marks > 50 && marks < 60:
 // Grade D
+
+
+// ===== SWITCH CASE STATEMENTS ===== 
+
+// switch (key) {
+//     case value:
+
+//         break;
+//     case value:
+
+//         break;
+//     case value:
+
+//         break;
+
+//     default:
+//         break;
+// }
+
+let key = 2
+let marks = 90
+let fahrenheit = 77
+switch (key) {
+    case 1:
+        // code 1
+        // console.log("Code 1") 
+        const cel = toCelsius(fahrenheit)
+        console.log("Celsius: " + cel)
+        break;
+    case 2:
+        // code 2
+        // console.log("Code 2")
+        const grades = GradeOfStudent(marks)
+        console.log("from calling Grade: " + grades)
+        break;
+
+
+    default:
+        console.log("Invalid key")
+        break;
+}
